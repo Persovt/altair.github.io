@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@font-face {
+  font-family: 'Mistral';
+  src: local("Mistral"), url("https://nomail.com.ua/files/woff/13f2e175662afea601b06f8203307bb0.woff") format("woff"); }
+@font-face {
+  font-family: 'KenyanCoffeeRg';
+  src: local("KenyanCoffeeRg-Bold"), url("https://nomail.com.ua/files/woff/5bc010a080942e362f4a5aa22a07c9e7.woff") format("woff"); }
+.page {
+  display: grid;
+  overflow: hidden;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto; }
+
+.header {
+  margin-top: 5px; }
+  .header h1 {
+    display: inline;
+    margin: 0; }
+  .header .nav-item {
+    list-style: none; }
+  .header .navbar {
+    margin: 0; }
+  .header .nav-link {
+    color: #999999;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 72px;
+    text-transform: uppercase;
+    letter-spacing: 0.65px; }
+  .header .active {
+    color: #303941; }
+  .header .menu {
+    margin-left: auto; }
+  .header .brandname {
+    margin-left: 11px;
+    color: #3f3b48;
+    font-family: Mistral;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 42px; }
+  .header .mail {
+    margin-left: 10px;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 72px;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    text-align: center;
+    border-radius: 50%; }
+    .header .mail i {
+      padding: 8px;
+      font-size: 16px;
+      border: 2px solid #303941;
+      border-radius: 50%; }
+
+.mainpage .devices {
+  height: 355px;
+  background-image: url("../../img/devices.webp"), url("../../img/Mountain.webp");
+  background-repeat: no-repeat,no-repeat;
+  background-position: center -15px ,center 150px; }
+.mainpage p, .mainpage h1 {
+  margin: 0; }
+.mainpage .title {
+  margin-top: 70px;
+  padding-bottom: 300px; }
+.mainpage .left-text-top {
+  color: #3f3b48;
+  font-family: Pacifico;
+  font-size: 34px;
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: 0.4px; }
+.mainpage .text-bottom {
+  color: #3f3b48;
+  font-family: "KenyanCoffeeRg";
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 53px;
+  text-transform: uppercase; }
+.mainpage .middle-text {
+  margin: 0 10px;
+  color: #ff0000;
+  font-family: "KenyanCoffeeRg";
+  font-size: 133px;
+  font-weight: 700;
+  line-height: 58px;
+  text-transform: uppercase; }
+
+.middle-block {
+  margin-top: 52px; }
+
+.projects {
+  background-color: #3f3b48; }
+  .projects p {
+    margin: 0;
+    color: #ffffff; }
+  .projects .title {
+    padding-top: 125px; }
+  .projects .left-top-text {
+    font-family: Pacifico;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1; }
+  .projects .left-bottom-text {
+    float: right;
+    font-family: "KenyanCoffeeRg";
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase; }
+  .projects .right-text {
+    margin-left: 5px;
+    font-family: "KenyanCoffeeRg";
+    font-size: 104px;
+    font-weight: 700;
+    line-height: 0.8;
+    text-transform: uppercase; }
+  .projects .briliant {
+    max-width: 320px; }
+    .projects .briliant__title {
+      color: white;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 53px;
+      text-transform: uppercase; }
+    .projects .briliant__body {
+      opacity: 0.6;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20px; }
+    .projects .briliant__trophy, .projects .briliant__listitems, .projects .briliant__rating {
+      color: #ffffff;
+      font-family: Montserrat;
+      word-spacing: 4px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: uppercase; }
+  .projects .technologyUse__title {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 53px;
+    text-transform: uppercase; }
+  .projects .phone-image {
+    z-index: 4;
+    display: block;
+    position: relative; }
+  .projects .phone-image::after {
+    content: ' ';
+    width: 576px;
+    height: 460px;
+    position: absolute;
+    top: 0;
+    background-image: url("../../img/background-phone.png");
+    background-repeat: no-repeat;
+    background-size: 100%; }
+  .projects .android, .projects .html, .projects .css {
+    width: 90px;
+    height: 100px;
+    background-color: 0  #635f6d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase; }
+  .projects .html {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; }
+  .projects .css {
+    margin: 0 1px; }
+  .projects .android {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; }
+  .projects .technology-icon {
+    font-size: 30px; }

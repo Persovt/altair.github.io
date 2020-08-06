@@ -1,0 +1,274 @@
+@import './fonts';
+.page{
+    display: grid;
+    overflow: hidden;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header{
+    margin-top: 5px;
+    h1{
+        display: inline;
+        margin: 0;
+    }
+    .nav-item{
+        list-style: none;
+    }
+    .navbar{
+        margin: 0;
+    }
+    .nav-link{
+        color: #999999;
+        font-family: Montserrat;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 72px;
+        text-transform: uppercase;
+        letter-spacing: 0.65px;
+        
+    }
+    .active{
+        color: #303941 ;
+    }
+    .menu{
+        margin-left: auto;
+    }
+    .brandname{
+        margin-left: 11px;
+        color: #3f3b48;
+        font-family: Mistral;
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 42px;
+    }
+    .mail{
+       margin-left: 10px;
+        color: black;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 72px;
+        text-transform: uppercase;
+        letter-spacing: 0.75px;
+        text-align: center;
+        border-radius: 50%;
+        i{
+            padding: 8px;
+            font-size: 16px;
+            border: 2px solid #303941;
+            border-radius: 50%;
+        }
+    }
+}
+.mainpage{
+    .devices{
+        height: 355px;
+        background-image: url("../../img/devices.webp") , url("../../img/Mountain.webp") ;
+        background-repeat: no-repeat,no-repeat;
+        background-position: center -15px ,center 150px;
+        
+    }
+  
+    p, h1{
+        margin: 0;
+    }
+    .title {
+        margin-top: 70px;
+        padding-bottom: 300px;
+    }
+    .left {
+    }
+    .left-text-top {
+         
+     
+        color: #3f3b48;
+        font-family: Pacifico;
+        font-size: 34px;
+        font-weight: 400;
+       
+       
+        font-size: 40px;
+        letter-spacing: 0.4px;
+   
+    
+    }
+    .text-bottom {
+       
+        color: #3f3b48;
+        font-family: "KenyanCoffeeRg";
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 53px;
+        text-transform: uppercase;
+    }
+    .middle {
+    }
+    .middle-text {
+               margin: 0 10px;
+        color: #ff0000;
+        font-family: "KenyanCoffeeRg";
+        font-size: 133px;
+        font-weight: 700;
+        line-height: 58px;
+        text-transform: uppercase;
+    }
+    .right {
+    }
+    
+    
+}
+.middle-block{
+    margin-top: 52px;
+}
+.projects{
+    background-color: #3f3b48;
+    p{
+        margin: 0;
+        color: #ffffff;
+    }
+    .title{
+        padding-top: 125px;
+    }
+    .left-top-text {
+    
+    font-family: Pacifico;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1; 
+    }
+    .left-bottom-text {
+        float: right;
+        font-family: "KenyanCoffeeRg";
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+
+    .right-text {
+        margin-left: 5px;
+        font-family: "KenyanCoffeeRg";
+        font-size: 104px;
+        font-weight: 700;
+        line-height: 0.8;
+        text-transform: uppercase;
+    }
+    
+    .briliant {
+
+		// .briliant__title
+        max-width: 320px;
+		&__title {
+            color: white;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 53px;
+            text-transform: uppercase;
+		}
+
+		// .briliant__body
+
+		&__body {
+        opacity: 0.6;
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+		}
+        &__trophy, &__listitems, &__rating{
+            color: #ffffff;
+            font-family: Montserrat;
+            word-spacing: 4px;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 26px;
+            text-transform: uppercase;
+        }
+		
+}
+.technologyUse {
+
+    // .technologyUse__title
+
+    &__title {
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 53px;
+        text-transform: uppercase;
+    }
+}
+.technology {
+
+    // .technology__body
+
+    &__body {
+    }
+
+   
+}
+
+
+
+        .phone-image{
+            z-index: 4;
+            display: block;
+            position: relative;
+        }
+        .phone-image::after{
+            content: ' ';
+            width: 576px;
+            height: 460px;
+            position: absolute;
+          top: 0;
+            background-image: url("../../img/background-phone.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+      
+
+
+.android, .html, .css{
+    width: 90px;
+    height: 100px;
+    background-color: 0  #635f6d;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+}
+.html {
+        border-top-left-radius: 10px; 
+        border-bottom-left-radius: 10px;
+}
+
+.technology-name {
+
+}
+.css {
+    margin: 0 1px;
+
+}
+
+.android {
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px;
+
+}
+
+
+   .technology-icon{
+       font-size: 30px;
+   }
+    
+}

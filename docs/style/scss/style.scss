@@ -212,22 +212,29 @@
 }
 
 
-
-        .phone-image{
-            z-index: 4;
-            display: block;
-            position: relative;
-        }
-        .phone-image::after{
-            content: ' ';
+    .phone-background{
+            // z-index: 2;
             width: 576px;
             height: 460px;
             position: absolute;
-          top: 0;
+            top: -50px;
+            right: -75%;
             background-image: url("../../img/background-phone.png");
+            
             background-repeat: no-repeat;
             background-size: 100%;
+            
         }
+        .phone-image{
+            z-index: 4;
+            position: relative;
+
+            
+        }
+        .phone{
+            position: relative;
+        }
+      
       
 
 
@@ -271,4 +278,88 @@
        font-size: 30px;
    }
     
+}
+
+.selectproject {
+    margin-top: 50px;
+    padding: 100px;
+    
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 53px;
+    text-transform: uppercase;
+    // .selectproject__previous
+
+    &__previous {
+       
+                /* Style for "previous p" */
+
+       
+    }
+    a{color: #333333; }
+    a:hover{
+        color:#635f6d;
+        text-decoration: none;
+    }
+    &__next, &__previous{
+        
+        background-color: white;
+    }
+    // .selectproject__currect
+
+    &__currect {
+        z-index: 20; 
+        border: 4px solid white ;
+        border-radius:15px;
+        padding: 0 20px;
+        position: relative; 
+        line-height: 1; 
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+    }
+    &__currect::before{
+        content: ' ';
+        position: absolute;
+        width: 25px;
+        height: 65px;
+
+      
+    
+        border: 2px solid transparent ;
+        border-radius: 20px;
+        background-color: #3f3b48;
+        padding: 0 20px;
+        left: 23%;
+        top: -11px;
+        z-index: -10;
+        //transform: rotate( 90deg);
+        border-top: 4px solid white;
+        border-bottom: 4px solid white;
+
+    }
+
+      // .selectproject__next
+
+      &__next {
+
+       
+                /* Style for "next proje" */
+       
+    }
+
+    // .selectproject__currectpage
+
+    &__currectpage {
+       
+        font-size: 18px;
+    }
+
+    // .selectproject__totalpage
+
+    &__totalpage {
+    }
+
+  
 }

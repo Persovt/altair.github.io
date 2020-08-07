@@ -149,19 +149,20 @@
     font-weight: 700;
     line-height: 53px;
     text-transform: uppercase; }
-  .projects .phone-image {
-    z-index: 4;
-    display: block;
-    position: relative; }
-  .projects .phone-image::after {
-    content: ' ';
+  .projects .phone-background {
     width: 576px;
     height: 460px;
     position: absolute;
-    top: 0;
+    top: -50px;
+    right: -75%;
     background-image: url("../../img/background-phone.png");
     background-repeat: no-repeat;
     background-size: 100%; }
+  .projects .phone-image {
+    z-index: 4;
+    position: relative; }
+  .projects .phone {
+    position: relative; }
   .projects .android, .projects .html, .projects .css {
     width: 90px;
     height: 100px;
@@ -186,3 +187,49 @@
     border-bottom-right-radius: 10px; }
   .projects .technology-icon {
     font-size: 30px; }
+
+.selectproject {
+  margin-top: 50px;
+  padding: 100px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 53px;
+  text-transform: uppercase; }
+  .selectproject__previous {
+    /* Style for "previous p" */ }
+  .selectproject a {
+    color: #333333; }
+  .selectproject a:hover {
+    color: #635f6d;
+    text-decoration: none; }
+  .selectproject__next, .selectproject__previous {
+    background-color: white; }
+  .selectproject__currect {
+    z-index: 20;
+    border: 4px solid white;
+    border-radius: 15px;
+    padding: 0 20px;
+    position: relative;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .selectproject__currect::before {
+    content: ' ';
+    position: absolute;
+    width: 25px;
+    height: 65px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-color: #3f3b48;
+    padding: 0 20px;
+    left: 23%;
+    top: -11px;
+    z-index: -10;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white; }
+  .selectproject__next {
+    /* Style for "next proje" */ }
+  .selectproject__currectpage {
+    font-size: 18px; }

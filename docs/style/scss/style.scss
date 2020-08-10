@@ -227,13 +227,15 @@
 
     .phone-background{
             // z-index: 2;
-            //width: 576px;
+            width: 576px;
             height: 460px;
             position: absolute;
-            top: -50px;
-            right: 50%;
+            top: 45%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
             background-image: url("../../img/background-phone.png");
-            transform: translate(50% , -50%);
+     
             background-repeat: no-repeat;
             background-size: 100%;
             
@@ -426,10 +428,12 @@
             }
             &__center::after{
                 content: ' ';
-                bottom: -13px;
-                left: 0;
+                bottom: -19px;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 position: absolute;
-                width: 100%;
+                width: 75px;
+
                 height: 10px;
                 background-color: #3f3b48;
     
@@ -552,7 +556,7 @@
 
 .corusel{
     background-color: #3f3b48;
-    padding-bottom: 90px;
+    padding: 90px 0;
     .title {
         color: #ffffff;
         margin-bottom: 80px;
@@ -739,8 +743,9 @@ text-transform: uppercase;
     .title-left::after{
         content: ' ';
         bottom: 0;
-        left: 0;
-        width: 100%;
+        left: 3px;
+        
+        width: 91px;
         height: 10px;
         background-color: #3f3b48;
         position: absolute;
@@ -1020,7 +1025,7 @@ position: relative;
     }
     &::after, &::before, & span{
         background-color: white !important;
-        box-shadow: 0 0 5px red;
+        box-shadow: 0 0 1px red;
     }
 }
 
@@ -1078,7 +1083,108 @@ body.fixed{
     
 }
 @media (max-width: 768px){
+
+    .funFacts {
+        .title {
+
+        }
+        .title-left {
+            line-height: 1.2;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        .title-left::after{
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+       
+        .title-right {
+            text-align: center;
+        }
+        .ourfavoriteClients {
+        
+                // .ourfavoriteClients__title
+        
+                &__title {
+                }
+        
+                // .ourfavoriteClients__brands
+        
+                &__brands {
+                }
+        }
+        .align-items-center {
+        }
+    }
    
+    
+
+    .corusel{
+        .title {
+            align-items: center !important;
+        }
+        .title-left {
+        }
+        .text-right {
+            text-align: center !important;
+        }
+        .title-left-top {
+            text-align: center !important;
+        }
+        .title-left-bottom {
+            text-align: center !important;
+        }
+        .title-middle {
+            text-align: center !important;
+        }
+        .title-right {
+            text-align: center !important;
+        }
+        
+    }
+   .howWeWork{
+       padding-bottom: 150px;
+            .title {
+               
+                align-items: normal !important;
+                // .title__left
+
+                &__left {
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                }
+
+                // .title__center
+
+                &__center {
+                    text-align: center;
+                   margin: 10px 0 20px;
+                }
+
+                // .title__right
+
+                &__right {
+                    text-align: center;
+                }
+        }
+        .body{
+            flex-direction: column;
+            justify-content: center !important;
+            text-align: center;
+          
+        
+                &__plan, &__action, &__launch{
+                    margin: 0 auto;
+                }
+        
+               
+        
+        }
+   }
+
+
+
     .footer{
         .container{
         .licence{
@@ -1133,7 +1239,7 @@ body.fixed{
     .brandname-active {
         z-index: 1;
         color: white !important;
-        text-shadow: 0 0 5px red;
+        text-shadow: 0 0 1px red;
     }
     .menu {
         
@@ -1157,7 +1263,7 @@ body.fixed{
     }
 
     .nav-link {
-        text-shadow: 0 0 5px red;
+        text-shadow: 0 0 1px red;
         color: white !important;
         font-size: 2rem !important;
     }

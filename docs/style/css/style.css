@@ -168,12 +168,14 @@
       line-height: 53px;
       text-transform: uppercase; }
   .projects .phone-background {
+    width: 576px;
     height: 460px;
     position: absolute;
-    top: -50px;
-    right: 50%;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
     background-image: url("../../img/background-phone.png");
-    transform: translate(50%, -50%);
     background-repeat: no-repeat;
     background-size: 100%; }
   .projects .phone-image {
@@ -306,10 +308,11 @@
       margin: 0 8px; }
     .howWeWork .title__center::after {
       content: ' ';
-      bottom: -13px;
-      left: 0;
+      bottom: -19px;
+      left: 50%;
+      transform: translate(-50%, -50%);
       position: absolute;
-      width: 100%;
+      width: 75px;
       height: 10px;
       background-color: #3f3b48; }
 
@@ -392,7 +395,7 @@
 
 .corusel {
   background-color: #3f3b48;
-  padding-bottom: 90px; }
+  padding: 90px 0; }
   .corusel .title {
     color: #ffffff;
     margin-bottom: 80px;
@@ -556,8 +559,8 @@
   .funFacts .title-left::after {
     content: ' ';
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: 3px;
+    width: 91px;
     height: 10px;
     background-color: #3f3b48;
     position: absolute; }
@@ -762,7 +765,7 @@
   transition: all 0.5s; }
 .burger-active::after, .burger-active::before, .burger-active span {
   background-color: white !important;
-  box-shadow: 0 0 5px red; }
+  box-shadow: 0 0 1px red; }
 
 .burger {
   z-index: 5;
@@ -798,6 +801,49 @@ body.fixed {
   overflow: hidden !important; }
 
 @media (max-width: 768px) {
+  .funFacts .title-left {
+    line-height: 1.2;
+    margin-bottom: 5px;
+    text-align: center; }
+  .funFacts .title-left::after {
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .funFacts .title-right {
+    text-align: center; }
+
+  .corusel .title {
+    align-items: center !important; }
+  .corusel .text-right {
+    text-align: center !important; }
+  .corusel .title-left-top {
+    text-align: center !important; }
+  .corusel .title-left-bottom {
+    text-align: center !important; }
+  .corusel .title-middle {
+    text-align: center !important; }
+  .corusel .title-right {
+    text-align: center !important; }
+
+  .howWeWork {
+    padding-bottom: 150px; }
+    .howWeWork .title {
+      align-items: normal !important; }
+      .howWeWork .title__left {
+        display: flex;
+        justify-content: center;
+        text-align: center; }
+      .howWeWork .title__center {
+        text-align: center;
+        margin: 10px 0 20px; }
+      .howWeWork .title__right {
+        text-align: center; }
+    .howWeWork .body {
+      flex-direction: column;
+      justify-content: center !important;
+      text-align: center; }
+      .howWeWork .body__plan, .howWeWork .body__action, .howWeWork .body__launch {
+        margin: 0 auto; }
+
   .footer .container {
     flex-direction: column; }
     .footer .container .licence {
@@ -845,7 +891,7 @@ body.fixed {
   .brandname-active {
     z-index: 1;
     color: white !important;
-    text-shadow: 0 0 5px red; }
+    text-shadow: 0 0 1px red; }
 
   .navbar-active {
     transition: all 0.5s;
@@ -862,7 +908,7 @@ body.fixed {
     height: 100vh; }
 
   .nav-link {
-    text-shadow: 0 0 5px red;
+    text-shadow: 0 0 1px red;
     color: white !important;
     font-size: 2rem !important; }
 

@@ -1,7 +1,7 @@
 import {sliderInit} from "./slider.js"
-
+import {menuBurgerInit} from "./menu-burger.js"
 sliderInit();
-
+menuBurgerInit();
 /* 
 .statistic__ciricle 
 
@@ -17,6 +17,7 @@ const statisticBestshots = $(".statistic__bestshots");
 const statisticCiricleSecond = $(".statistic__ciricleSecond");
 const statisticCoffesmade = $(".statistic__coffesmade");
 const statisticWinningawards = $(".statistic__winningawards");
+const line          =  document.getElementsByTagName('line')[0];
 
 const statistic = document.querySelector(".statistic")
 
@@ -30,16 +31,9 @@ let linePaint = (firstObject,secondObject) => {
       let posFirstObjectLeft = firstPos.left + ($(firstObject).width() * 0.5)
       let posSecondObjectTop = secondPos.top + ($(secondObject).height() * 0.5)
       let posSecondObjectLeft = secondPos.left + ($(secondObject).width()* 0.5)
-  
-   
-    
-    console.log(posFirstObjectTop,posFirstObjectLeft);
-    console.log(posSecondObjectTop,posSecondObjectLeft);
-    //console.log(posFirstObject);
-   // let line = '<svg class="line"><line x1="'+ posFirstObject.left + ' " y1="'+ posFirstObject.top + '" x2='+posSecondObject.left+' y2='+ posSecondObject.top + '/></svg>'
-   line = '<svg class="line"><line x1="'+ posFirstObjectLeft +'" y1="'+ posFirstObjectTop +'" x2="'+ posSecondObjectLeft +'" y2="'+ posSecondObjectTop +'" /></svg>'
+    line = '<svg class="line"><line x1="'+ posFirstObjectLeft +'" y1="'+ posFirstObjectTop +'" x2="'+ posSecondObjectLeft +'" y2="'+ posSecondObjectTop +'" /></svg>'
     $(line).prependTo(".statistic");
-
+        
 
 }
 

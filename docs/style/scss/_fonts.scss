@@ -1,4 +1,11 @@
-
+$maxWidth: 1280;
+@mixin adaptiv-font($pcSize, $mobSize) {
+ $addSize: $pcSize - $mobSize;
+ $maxWidth: $maxWidth - 320;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+    
+    
     @font-face { font-family: 'Mistral';  src: local('Mistral'), url('https://nomail.com.ua/files/woff/13f2e175662afea601b06f8203307bb0.woff') format('woff'); }
     @font-face { font-family: 'KenyanCoffeeRg';  src: local('KenyanCoffeeRg-Bold'), url('https://nomail.com.ua/files/woff/5bc010a080942e362f4a5aa22a07c9e7.woff') format('woff'); }
     @font-face { font-family: 'Myriad-Pro';  src: local('MyriadPro-Regular'), url('https://nomail.com.ua/files/woff/4dc5956a31b5832b356867433bb4e516.woff') format('woff'); }

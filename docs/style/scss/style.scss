@@ -275,12 +275,12 @@
 .selectpage {
   padding-bottom: 95px;
   padding-top: 50px;
- 
+
   // .selectpage__number
 
   &__number {
     height: 45px;
-     width: 70px;
+    width: 70px;
     color: white;
     font-family: Montserrat;
     font-size: 18px;
@@ -290,7 +290,7 @@
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-   // display: inline-block;
+    // display: inline-block;
     background-color: #3f3b48;
     border: 3px solid white;
     position: relative;
@@ -339,8 +339,7 @@
     position: relative;
     z-index: 2;
     font-size: 12px;
-    transform: translateY(-.3rem) translateX(.2rem);
-    
+    transform: translateY(-0.3rem) translateX(0.2rem);
   }
 
   &__previos,
@@ -360,7 +359,6 @@
     justify-content: center;
     text-transform: uppercase;
     cursor: pointer;
-    
   }
   &__previos::after,
   &__next::after {
@@ -372,7 +370,6 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    
   }
   &__previos::after {
     clip-path: polygon(0 0, 100% 9px, 100% calc(100% - 9px), 0 100%);
@@ -776,12 +773,18 @@
     z-index: -1;
   }
   .statistic {
-   display: flex;
+    display: flex;
     position: relative;
     top: -100px;
-    
+
     // .statistic__ciricle
-    &__ciricleFirst, &__happyClient, &__complitedProjects,&__bestshots,&__ciricleSecond,&__coffesmade,&__winningawards{
+    &__ciricleFirst,
+    &__happyClient,
+    &__complitedProjects,
+    &__bestshots,
+    &__ciricleSecond,
+    &__coffesmade,
+    &__winningawards {
       border-radius: 50%;
       background-color: #3f3b48;
       z-index: 1;
@@ -808,15 +811,12 @@
       white-space: nowrap;
     }
 
-
     &__ciricleFirst {
       width: 32px;
       height: 32px;
       left: 3%;
       top: 180px;
-      
     }
-   
 
     // .statistic__line
 
@@ -828,9 +828,7 @@
       left: 10%;
       top: 50px;
     }
- 
 
-   
     // .statistic__complitedProjects
 
     &__complitedProjects {
@@ -838,18 +836,16 @@
       width: 82px;
       height: 82px;
       left: 17%;
-    top: 160px;
+      top: 160px;
     }
 
     // .statistic__bestshots
 
     &__bestshots {
-     
       left: 20%;
       top: 40px;
       width: 112px;
       height: 112px;
-     
     }
 
     // .statistic__ciricleSecond
@@ -857,10 +853,9 @@
     &__ciricleSecond {
       left: 18%;
       top: -15px;
-  
+
       width: 32px;
       height: 32px;
-     
     }
 
     // .statistic__coffesmade
@@ -871,7 +866,6 @@
       font-size: 21px;
       width: 71px;
       height: 71px;
-     
     }
 
     // .statistic__winningawards
@@ -882,7 +876,6 @@
       font-size: 72px;
       width: 190px;
       height: 190px;
-     
     }
   }
 }
@@ -1002,47 +995,32 @@
 body.fixed {
   overflow: hidden !important;
 }
-@media (max-width: 1024px){
-
+@media (max-width: 1024px) {
   .statistic {
-
-		// .statistic__ciricleFirst
+    // .statistic__ciricleFirst
 
     &__ciricleFirst {
-      
       left: 0% !important;
-    
-      
     }
-   
 
     // .statistic__line
 
     // .statistic__happyClient
 
     &__happyClient {
-     
       left: 4% !important;
-  
     }
- 
 
-   
     // .statistic__complitedProjects
 
     &__complitedProjects {
-      
       left: 9% !important;
-    
     }
 
     // .statistic__bestshots
 
     &__bestshots {
-     
       left: 8% !important;
-      
-     
     }
 
     // .statistic__ciricleSecond
@@ -1050,29 +1028,23 @@ body.fixed {
     &__ciricleSecond {
       left: 3% !important;
       top: 20px !important;
-     
     }
 
     // .statistic__coffesmade
 
     &__coffesmade {
       left: 11% !important;
-      
     }
 
     // .statistic__winningawards
 
     &__winningawards {
       left: 14% !important;
-     
-     
     }
-}
-
+  }
 
   .briliant {
     margin: 0 auto;
-    
   }
 
   .technologyUse {
@@ -1092,33 +1064,26 @@ body.fixed {
 @media (max-width: 768px) {
   .statistic {
     top: 0 !important;
-   flex-direction: column;
-		// .statistic__ciricleFirst
+    flex-direction: column;
+    // .statistic__ciricleFirst
 
     &__ciricleFirst {
-      
       left: 40% !important;
       top: -20px !important;
-      
     }
-   
 
     // .statistic__line
 
     // .statistic__happyClient
 
     &__happyClient {
-     
       left: 15% !important;
       top: 10px !important;
     }
- 
 
-   
     // .statistic__complitedProjects
 
     &__complitedProjects {
-      
       left: 55% !important;
       top: 0px !important;
     }
@@ -1126,10 +1091,8 @@ body.fixed {
     // .statistic__bestshots
 
     &__bestshots {
-     
       left: 40% !important;
       top: 50px !important;
-     
     }
 
     // .statistic__ciricleSecond
@@ -1137,7 +1100,6 @@ body.fixed {
     &__ciricleSecond {
       left: 20% !important;
       top: 0px !important;
-     
     }
 
     // .statistic__coffesmade
@@ -1152,7 +1114,6 @@ body.fixed {
     &__winningawards {
       left: 35% !important;
       top: 100px !important;
-     
     }
   }
   .funFacts {
@@ -1263,7 +1224,6 @@ body.fixed {
     word-spacing: 60px;
   }
 
-  
   .projects .title {
     text-align: center;
   }
@@ -1277,8 +1237,6 @@ body.fixed {
     display: flex;
     justify-content: center;
   }
- 
- 
 
   .page {
     position: relative;

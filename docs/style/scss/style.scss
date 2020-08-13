@@ -275,17 +275,22 @@
 .selectpage {
   padding-bottom: 95px;
   padding-top: 50px;
+ 
   // .selectpage__number
 
   &__number {
+    height: 45px;
+     width: 70px;
     color: white;
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 700;
     border-radius: 10px;
-    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-transform: uppercase;
-    display: inline-block;
+   // display: inline-block;
     background-color: #3f3b48;
     border: 3px solid white;
     position: relative;
@@ -334,11 +339,14 @@
     position: relative;
     z-index: 2;
     font-size: 12px;
-    transform: translateY(-0.8rem) translateX(-0.2rem);
+    transform: translateY(-.3rem) translateX(.2rem);
+    
   }
 
   &__previos,
   &__next {
+    text-align: center;
+    height: 45px;
     position: relative;
     z-index: 0;
     width: 160px;
@@ -346,9 +354,13 @@
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 700;
-    line-height: 53px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-transform: uppercase;
     cursor: pointer;
+    
   }
   &__previos::after,
   &__next::after {
@@ -360,6 +372,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
+    
   }
   &__previos::after {
     clip-path: polygon(0 0, 100% 9px, 100% calc(100% - 9px), 0 100%);
@@ -763,33 +776,15 @@
     z-index: -1;
   }
   .statistic {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     // .statistic__ciricle
-
-    &__ciricleFirst {
-      position: absolute;
-
+    &__ciricleFirst, &__happyClient, &__complitedProjects,&__bestshots,&__ciricleSecond,&__coffesmade,&__winningawards{
       border-radius: 50%;
-      width: 32px;
-      height: 32px;
       background-color: #3f3b48;
-      bottom: 15%;
-      left: 30%;
       z-index: 1;
-    }
-
-    // .statistic__line
-
-    // .statistic__happyClient
-
-    &__happyClient {
-      position: absolute;
-      border-radius: 50%;
-      bottom: 20%;
-      left: 35%;
-      z-index: 1;
-      width: 112px;
-      height: 112px;
-      background-color: #3f3b48;
+      position: relative;
       color: #ffffff;
       font-family: Montserrat;
       font-size: 38px;
@@ -798,8 +793,23 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      position: relative;
     }
+
+    &__ciricleFirst {
+      width: 32px;
+      height: 32px;
+      
+    }
+
+    // .statistic__line
+
+    // .statistic__happyClient
+
+    &__happyClient {
+      width: 112px;
+      height: 112px;
+    }
+
     &__nameblock {
       position: absolute;
       bottom: -60px;
@@ -816,101 +826,46 @@
     // .statistic__complitedProjects
 
     &__complitedProjects {
-      position: absolute;
-      border-radius: 50%;
-      bottom: 10%;
-      left: 45%;
-      z-index: 1;
-      color: #ffffff;
-      font-family: Montserrat;
       font-size: 26px;
-      font-weight: 700;
-      line-height: 25px;
       width: 82px;
       height: 82px;
-      background-color: #3f3b48;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     // .statistic__bestshots
 
     &__bestshots {
-      position: absolute;
-      border-radius: 50%;
-      bottom: 25%;
-      left: 50%;
-      z-index: 1;
-      color: #ffffff;
-      font-family: Montserrat;
-      font-size: 38px;
-      font-weight: 700;
-      line-height: 25px;
+     
+     
       width: 112px;
       height: 112px;
-      background-color: #3f3b48;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+     
     }
 
     // .statistic__ciricleSecond
 
     &__ciricleSecond {
-      position: absolute;
-      border-radius: 50%;
-      bottom: 45%;
-      left: 45%;
-      z-index: 1;
+     
       width: 32px;
       height: 32px;
-      background-color: #3f3b48;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+     
     }
 
     // .statistic__coffesmade
 
     &__coffesmade {
-      position: absolute;
-      border-radius: 50%;
-      bottom: 50%;
-      left: 60%;
-      z-index: 1;
-      color: #ffffff;
-      font-family: Montserrat;
       font-size: 21px;
-      font-weight: 700;
-      line-height: 15.85px;
       width: 71px;
       height: 71px;
-      background-color: #3f3b48;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+     
     }
 
     // .statistic__winningawards
 
     &__winningawards {
-      position: absolute;
-      border-radius: 50%;
-      bottom: 20%;
-      left: 65%;
-      z-index: 1;
-      color: #ffffff;
-      font-family: Montserrat;
       font-size: 72px;
-      font-weight: 700;
-      line-height: 42.41px;
       width: 190px;
       height: 190px;
-      background-color: #3f3b48;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+     
     }
   }
 }
@@ -1134,7 +1089,10 @@ body.fixed {
   }
   .selectpage__previos,
   .selectpage__next {
-    width: 130px;
+    width: 110px;
+    white-space: normal;
+    text-align: center;
+    word-spacing: 60px;
   }
 
   .briliant {

@@ -607,8 +607,8 @@
     z-index: -1; }
   .funFacts .statistic {
     display: flex;
-    justify-content: space-between;
-    flex-direction: column; }
+    position: relative;
+    top: -100px; }
     .funFacts .statistic__ciricleFirst, .funFacts .statistic__happyClient, .funFacts .statistic__complitedProjects, .funFacts .statistic__bestshots, .funFacts .statistic__ciricleSecond, .funFacts .statistic__coffesmade, .funFacts .statistic__winningawards {
       border-radius: 50%;
       background-color: #3f3b48;
@@ -622,12 +622,6 @@
       display: flex;
       justify-content: center;
       align-items: center; }
-    .funFacts .statistic__ciricleFirst {
-      width: 32px;
-      height: 32px; }
-    .funFacts .statistic__happyClient {
-      width: 112px;
-      height: 112px; }
     .funFacts .statistic__nameblock {
       position: absolute;
       bottom: -60px;
@@ -639,21 +633,41 @@
       text-transform: uppercase;
       overflow: visible;
       white-space: nowrap; }
+    .funFacts .statistic__ciricleFirst {
+      width: 32px;
+      height: 32px;
+      left: 3%;
+      top: 180px; }
+    .funFacts .statistic__happyClient {
+      width: 112px;
+      height: 112px;
+      left: 10%;
+      top: 50px; }
     .funFacts .statistic__complitedProjects {
       font-size: 26px;
       width: 82px;
-      height: 82px; }
+      height: 82px;
+      left: 17%;
+      top: 160px; }
     .funFacts .statistic__bestshots {
+      left: 20%;
+      top: 40px;
       width: 112px;
       height: 112px; }
     .funFacts .statistic__ciricleSecond {
+      left: 18%;
+      top: -15px;
       width: 32px;
       height: 32px; }
     .funFacts .statistic__coffesmade {
+      left: 25%;
+      top: -60px;
       font-size: 21px;
       width: 71px;
       height: 71px; }
     .funFacts .statistic__winningawards {
+      left: 30%;
+      top: 0px;
       font-size: 72px;
       width: 190px;
       height: 190px; }
@@ -745,7 +759,64 @@
 body.fixed {
   overflow: hidden !important; }
 
+@media (max-width: 1024px) {
+  .statistic__ciricleFirst {
+    left: 0% !important; }
+  .statistic__happyClient {
+    left: 4% !important; }
+  .statistic__complitedProjects {
+    left: 9% !important; }
+  .statistic__bestshots {
+    left: 8% !important; }
+  .statistic__ciricleSecond {
+    left: 3% !important;
+    top: 20px !important; }
+  .statistic__coffesmade {
+    left: 11% !important; }
+  .statistic__winningawards {
+    left: 14% !important; }
+
+  .briliant {
+    margin: 0 auto; }
+
+  .technologyUse {
+    padding-left: 0 !important;
+    text-align: center; }
+
+  .technology__body {
+    justify-content: center; }
+
+  .middle-block {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center; } }
 @media (max-width: 768px) {
+  .statistic {
+    top: 0 !important;
+    flex-direction: column; }
+    .statistic__ciricleFirst {
+      left: 40% !important;
+      top: -20px !important; }
+    .statistic__happyClient {
+      left: 15% !important;
+      top: 10px !important; }
+    .statistic__complitedProjects {
+      left: 55% !important;
+      top: 0px !important; }
+    .statistic__bestshots {
+      left: 40% !important;
+      top: 50px !important; }
+    .statistic__ciricleSecond {
+      left: 20% !important;
+      top: 0px !important; }
+    .statistic__coffesmade {
+      left: 15% !important;
+      top: 50px !important; }
+    .statistic__winningawards {
+      left: 35% !important;
+      top: 100px !important; }
+
   .funFacts .title-left {
     line-height: 1.2;
     margin-bottom: 5px;
@@ -802,9 +873,6 @@ body.fixed {
     text-align: center;
     word-spacing: 60px; }
 
-  .briliant {
-    margin: 0 auto; }
-
   .projects .title {
     text-align: center; }
 
@@ -816,19 +884,6 @@ body.fixed {
 
   .phone {
     display: flex;
-    justify-content: center; }
-
-  .technologyUse {
-    padding-left: 0 !important;
-    text-align: center; }
-
-  .middle-block {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center; }
-
-  .technology__body {
     justify-content: center; }
 
   .page {

@@ -776,9 +776,10 @@
     z-index: -1;
   }
   .statistic {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+   display: flex;
+    position: relative;
+    top: -100px;
+    
     // .statistic__ciricle
     &__ciricleFirst, &__happyClient, &__complitedProjects,&__bestshots,&__ciricleSecond,&__coffesmade,&__winningawards{
       border-radius: 50%;
@@ -794,22 +795,6 @@
       justify-content: center;
       align-items: center;
     }
-
-    &__ciricleFirst {
-      width: 32px;
-      height: 32px;
-      
-    }
-
-    // .statistic__line
-
-    // .statistic__happyClient
-
-    &__happyClient {
-      width: 112px;
-      height: 112px;
-    }
-
     &__nameblock {
       position: absolute;
       bottom: -60px;
@@ -823,19 +808,45 @@
       white-space: nowrap;
     }
 
+
+    &__ciricleFirst {
+      width: 32px;
+      height: 32px;
+      left: 3%;
+      top: 180px;
+      
+    }
+   
+
+    // .statistic__line
+
+    // .statistic__happyClient
+
+    &__happyClient {
+      width: 112px;
+      height: 112px;
+      left: 10%;
+      top: 50px;
+    }
+ 
+
+   
     // .statistic__complitedProjects
 
     &__complitedProjects {
       font-size: 26px;
       width: 82px;
       height: 82px;
+      left: 17%;
+    top: 160px;
     }
 
     // .statistic__bestshots
 
     &__bestshots {
      
-     
+      left: 20%;
+      top: 40px;
       width: 112px;
       height: 112px;
      
@@ -844,7 +855,9 @@
     // .statistic__ciricleSecond
 
     &__ciricleSecond {
-     
+      left: 18%;
+      top: -15px;
+  
       width: 32px;
       height: 32px;
      
@@ -853,6 +866,8 @@
     // .statistic__coffesmade
 
     &__coffesmade {
+      left: 25%;
+      top: -60px;
       font-size: 21px;
       width: 71px;
       height: 71px;
@@ -862,6 +877,8 @@
     // .statistic__winningawards
 
     &__winningawards {
+      left: 30%;
+      top: 0px;
       font-size: 72px;
       width: 190px;
       height: 190px;
@@ -869,7 +886,6 @@
     }
   }
 }
-
 /*===================footer=================*/
 .footer {
   padding: 20px 0;
@@ -986,7 +1002,159 @@
 body.fixed {
   overflow: hidden !important;
 }
+@media (max-width: 1024px){
+
+  .statistic {
+
+		// .statistic__ciricleFirst
+
+    &__ciricleFirst {
+      
+      left: 0% !important;
+    
+      
+    }
+   
+
+    // .statistic__line
+
+    // .statistic__happyClient
+
+    &__happyClient {
+     
+      left: 4% !important;
+  
+    }
+ 
+
+   
+    // .statistic__complitedProjects
+
+    &__complitedProjects {
+      
+      left: 9% !important;
+    
+    }
+
+    // .statistic__bestshots
+
+    &__bestshots {
+     
+      left: 8% !important;
+      
+     
+    }
+
+    // .statistic__ciricleSecond
+
+    &__ciricleSecond {
+      left: 3% !important;
+      top: 20px !important;
+     
+    }
+
+    // .statistic__coffesmade
+
+    &__coffesmade {
+      left: 11% !important;
+      
+    }
+
+    // .statistic__winningawards
+
+    &__winningawards {
+      left: 14% !important;
+     
+     
+    }
+}
+
+
+  .briliant {
+    margin: 0 auto;
+    
+  }
+
+  .technologyUse {
+    padding-left: 0 !important;
+    text-align: center;
+  }
+  .technology__body {
+    justify-content: center;
+  }
+  .middle-block {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 @media (max-width: 768px) {
+  .statistic {
+    top: 0 !important;
+   flex-direction: column;
+		// .statistic__ciricleFirst
+
+    &__ciricleFirst {
+      
+      left: 40% !important;
+      top: -20px !important;
+      
+    }
+   
+
+    // .statistic__line
+
+    // .statistic__happyClient
+
+    &__happyClient {
+     
+      left: 15% !important;
+      top: 10px !important;
+    }
+ 
+
+   
+    // .statistic__complitedProjects
+
+    &__complitedProjects {
+      
+      left: 55% !important;
+      top: 0px !important;
+    }
+
+    // .statistic__bestshots
+
+    &__bestshots {
+     
+      left: 40% !important;
+      top: 50px !important;
+     
+    }
+
+    // .statistic__ciricleSecond
+
+    &__ciricleSecond {
+      left: 20% !important;
+      top: 0px !important;
+     
+    }
+
+    // .statistic__coffesmade
+
+    &__coffesmade {
+      left: 15% !important;
+      top: 50px !important;
+    }
+
+    // .statistic__winningawards
+
+    &__winningawards {
+      left: 35% !important;
+      top: 100px !important;
+     
+    }
+  }
   .funFacts {
     .title {
     }
@@ -1095,9 +1263,7 @@ body.fixed {
     word-spacing: 60px;
   }
 
-  .briliant {
-    margin: 0 auto;
-  }
+  
   .projects .title {
     text-align: center;
   }
@@ -1111,19 +1277,9 @@ body.fixed {
     display: flex;
     justify-content: center;
   }
-  .technologyUse {
-    padding-left: 0 !important;
-    text-align: center;
-  }
-  .middle-block {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .technology__body {
-    justify-content: center;
-  }
+ 
+ 
+
   .page {
     position: relative;
   }

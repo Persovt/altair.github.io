@@ -15,6 +15,7 @@ const statisticCiricleFirst = $(".statistic__ciricleFirst");
 const statisticHappyClient = $(".statistic__happyClient");
 const statisticComplitedProjects = $(".statistic__complitedProjects ");
 const statisticBestshots = $(".statistic__bestshots");
+
 const statisticCiricleSecond = $(".statistic__ciricleSecond");
 const statisticCoffesmade = $(".statistic__coffesmade");
 const statisticWinningawards = $(".statistic__winningawards");
@@ -27,6 +28,7 @@ const line5 = document.querySelector('.line-5').getElementsByTagName('line')[0];
 const statistic = document.querySelector(".statistic")
 
 let linePaint = (firstObject, secondObject, linenumber) => {
+
   let firstPos = $(firstObject).position();
   let secondPos = $(secondObject).position();
   let posFirstObjectTop = firstPos.top + ($(firstObject).height() * 0.5)
@@ -53,6 +55,5 @@ linePaint(statisticBestshots, statisticCiricleSecond, line2);
 linePaint(statisticBestshots, statisticCoffesmade, line3);
 linePaint(statisticComplitedProjects, statisticBestshots, line4);
 linePaint(statisticBestshots, statisticWinningawards, line5);
-
 
 
